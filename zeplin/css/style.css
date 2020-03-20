@@ -1,0 +1,81 @@
+header { position: absolute; left: 50%; top: 0; z-index: 10; width: 1212px; margin:28px auto 0; transform: translateX(-50%);}
+header h1 { float: left;}
+header > div { float: right;}
+header > div nav,
+header > div ul,
+header > div ul li { float: left;}
+header > div li { padding: 0 27.5px;}
+header > div nav a { display: block; height: 34px; line-height: 34px; font-size: 14px; color: #fff; text-transform: uppercase; transition: all .5s;}
+header > div nav a:hover { border-bottom: 3px solid #fce38a; color:#fce38a;}
+header > div > ul a { display: block; width: 18px; height: 34px; font-size: 0;}
+header > div > ul li { padding: 0 20px;}
+header > div > ul li:last-child { padding-top: 0;}
+header > div > ul li:first-child a { background: url(../images/ico_cart.png) no-repeat center;}
+header > div > ul li:last-child a { background: url(../images/ico_search.png) no-repeat center;}
+
+.visual { height: 100vh; background: url(../images/bg_visual.png) no-repeat center / 100% auto; position: relative;}
+.visual .gradient { height: 100vh; background:linear-gradient(to bottom, rgba(243,129,159,.9), rgba(252,227,138,.9));}
+.visual .gradient > div { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center;}
+.visual .gradient p:after { content: ""; display:block; margin: 76px auto 50px; width: 60px; height: 3px; background: #fff;}
+.visual .gradient a { display: inline-block; width: 160px; height: 40px; border: 3px solid #fff; line-height: 40px; color:#fff; font-size:14px; text-transform: uppercase;}
+/* slider */
+.visual .pager { position: absolute; left:50%; bottom: 0; display: flex; width:1242px; transform: translateX(-50%);}
+.visual .pager > div { flex:1; padding: 0 15px;}
+.visual .pager > div a { display: block; position: relative; border-top: 2px solid #fff; color:#fff; font-size: 18px; text-transform: uppercase;}
+.visual .pager > div a b { font-size: 24px; padding: 0 9px 0 0;}
+.visual .pager > div a:after { content: ""; position: absolute; left: 0; top:-2px; width: 0; height:2px; background:#f38181; }
+.visual .pager > div a.active:after { animation: bar 4s linear 1 both;}
+.visual .bx-controls-direction { display: none;}
+.visual .bx-viewport { height: auto !important;}
+
+@keyframes bar {
+  0% { width: 0;}
+  100% { width: 100%;}
+}
+
+.story { padding: 91px 0 0;}
+.story p { text-align: center; font-size: 15px; color:#999; line-height: 24px;}
+.story .list { padding: 101px 0 110px; text-align: center; font-size: 0;}
+.story .list li { margin: 0 15px; display: inline-block; background: #95e1d3;}
+.story .list li a { display: block; position: relative; transform: translate(0, 0); transition: transform .5s;}
+.story .list li a:before { content: ""; position: absolute; left: 0; top: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, #fce38a, #f38181); opacity:0; transition: opacity .5s;}
+.story .list li a div { overflow: hidden; position: absolute; left:50%; top: 50%; z-index: 10; width: 150px; height: 50px; transform: translate(-50%, -50%);}
+.story .list li a span { display: block; transform: translateY(60px);font-size:18px; text-transform: uppercase; color:#fff; transition: transform .5s .2s;}
+.story .list li a span:before { content:url(../images/users.png); display: block;}
+.story .list li:hover a { transform: translate(-10px, -10px);}
+.story .list li:hover a:before { opacity: .9;}
+.story .list li:hover span { transform: translateY(0);}
+.story .count { background: #95e1d3;}
+.story .count ul { display: flex; width:1212px; margin: 0 auto; border-right:1px solid #b5eae0; box-sizing: border-box;}
+.story .count ul li { display: flex; flex-direction: column; justify-content:center; align-items: center; flex:1; height: 270px; color:#fff; line-height: 1; border-left:1px solid #b5eae0;}
+.story .count ul li strong { font-size: 72px;}
+.story .count ul li p { padding: 30px 0 0; font-size:14px; color:#fff; text-transform: uppercase;}
+
+.service { padding: 109px 0 0;}
+.service .list { display: flex; justify-content: space-between; flex-wrap: wrap; position: relative; width: 1200px; margin: 0 auto; padding: 66px 0 122px;}
+.service .list:before { content: ""; position: absolute; left: 0; top:186px; width: 100%; height: 1px; background: #e5e5e5;}
+.service .list li { padding: 0 0 0 90px; width: 33.3%; height: 168px; box-sizing: border-box;}
+.service .list li.ico { background:no-repeat 30px 0;}
+.service .list li.ico.no1 { background-image: url(../images/ico_photography.png);}
+.service .list li.ico.no2 { background-image: url(../images/ico_webdesign.png);}
+.service .list li.ico.no3 { background-image: url(../images/ico_computer.png);}
+.service .list li.ico.no4 { background-image: url(../images/ico_book.png);}
+.service .list li.ico.no5 { background-image: url(../images/ico_home.png);}
+.service .list li.ico.no6 { background-image: url(../images/ico_digital.png);}
+.service .list li strong { font-size: 14px; color:#333; text-transform: uppercase; line-height: 1;}
+.service .list li p { padding: 20px 0 0; width: 282px; font-size: 15px; line-height: 24px; color:#999;}
+
+
+.h2 { text-align: center; text-transform: uppercase; font-size: 30px; color: #333; line-height: 1;}
+.h2 img { display: block; margin: 0 auto; padding: 0 0 23px;}
+.h2:after { content: ""; display: block; margin:40px auto 47px; width: 60px; height: 3px; background: #f38181;}
+
+
+
+
+
+
+
+
+
+/*  */
